@@ -52,8 +52,8 @@ def search(node, x):
 
 
 # Load the training and test data into pandas dataframes
-train_df = pd.read_csv('train',sep='\s+')
-test_df = pd.read_csv('test-sample',sep='\s+')
+train_df = pd.read_csv('wine_quality_train.csv',delim_whitespace=True)
+test_df = pd.read_csv('wine_quality_test.csv',delim_whitespace=True)
 
 test_result_df = pd.read_csv('test-sample-result')
 
